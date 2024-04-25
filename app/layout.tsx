@@ -3,6 +3,9 @@ import { AddressBar } from '#/ui/address-bar';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
+import Head from 'next/head';
+import Script from 'next/script';
+
 
 export const metadata: Metadata = {
   title: {
@@ -29,6 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
+      <Head>
+        <Script src="https://cdn.optimizely.com/js/8224190054.js" />
+      </Head>
       <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] pb-36">
         <GlobalNav />
 
