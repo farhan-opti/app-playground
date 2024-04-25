@@ -32,9 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
-      <Head>
-        <Script src="https://cdn.optimizely.com/js/8224190054.js" />
-      </Head>
+      <Script src="https://cdn.optimizely.com/js/8224190054.js" />
       <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] pb-36">
         <GlobalNav />
 
